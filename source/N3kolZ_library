@@ -33,7 +33,7 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-    warn("\27Бібліотека KlorPe успішно завантажується!\27")
+    warn("\27Р‘С–Р±Р»С–РѕС‚РµРєР° N3kolZ СѓСЃРїС–С€РЅРѕ Р·Р°РІР°РЅС‚Р°Р¶СѓС”С‚СЊСЃСЏ!\27")
 end 
 
 local function GetIcon(IconName) 
@@ -222,7 +222,7 @@ local function LoadCfg(Config)
 				end    
 			end)
 		else
-			warn("KlorpPe Library Config Loader - Could not find ", a ,b)
+			warn("N3kolZ Library Config Loader - Could not find ", a ,b)
 		end
 	end)
 end
@@ -468,14 +468,14 @@ function OrionLib:MakeWindow(WindowConfig)
 	local UIHidden = false
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "KlorPe Library"
+	WindowConfig.Name = WindowConfig.Name or "N3kolZ Library"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "KlorPe Library"
+	WindowConfig.IntroText = WindowConfig.IntroText or "N3kolZ Library"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
@@ -648,8 +648,8 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Інтерфейс Замасковано",
-			Content = "Нажми Insert щоб перевідкрити інтерфейс",
+			Name = "Р†РЅС‚РµСЂС„РµР№СЃ Р—Р°РјР°СЃРєРѕРІР°РЅРѕ",
+			Content = "РќР°Р¶РјРё Insert С‰РѕР± РїРµСЂРµРІС–РґРєСЂРёС‚Рё С–РЅС‚РµСЂС„РµР№СЃ",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
@@ -1697,7 +1697,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					Position = UDim2.new(0, 150, 0, 112),
 					Font = Enum.Font.GothamBold
 				}), "Text"),
-				AddThemeObject(SetProps(MakeElement("Label", "Ця частина скриптів заблокована для користувачів KlorPe Library. Придбайте Premium на сервері Discord", 12), {
+				AddThemeObject(SetProps(MakeElement("Label", "Р¦СЏ С‡Р°СЃС‚РёРЅР° СЃРєСЂРёРїС‚С–РІ Р·Р°Р±Р»РѕРєРѕРІР°РЅР° РґР»СЏ РєРѕСЂРёСЃС‚СѓРІР°С‡С–РІ N3kolZ Library. РџСЂРёРґР±Р°Р№С‚Рµ Premium РЅР° СЃРµСЂРІРµСЂС– Discord", 12), {
 					Size = UDim2.new(1, -200, 0, 14),
 					Position = UDim2.new(0, 150, 0, 138),
 					TextWrapped = true,
@@ -1709,8 +1709,8 @@ function OrionLib:MakeWindow(WindowConfig)
 	end  
 	
 	OrionLib:MakeNotification({
-		Name = "Оновлення бібліотеки інтерфейсу..",
-		Content = "Нова бібліотека інтерфейсу",
+		Name = "РћРЅРѕРІР»РµРЅРЅСЏ Р±С–Р±Р»С–РѕС‚РµРєРё С–РЅС‚РµСЂС„РµР№СЃСѓ..",
+		Content = "РќРѕРІР° Р±С–Р±Р»С–РѕС‚РµРєР° С–РЅС‚РµСЂС„РµР№СЃСѓ",
 		Time = 5
 	})
 	
